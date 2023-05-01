@@ -315,4 +315,3 @@ def create_app(reset_db=RESET_DB, test_config=None):
         return response
     
     return app
-

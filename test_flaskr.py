@@ -4,7 +4,7 @@ import json
 from flask_sqlalchemy import SQLAlchemy
 from dateutil.parser import parse
 
-from flaskr import create_app
+from app import create_app
 from models import setup_db, Hall, Couple
 
 DB_HOST = os.getenv('DB_HOST', '127.0.0.1:5432')
