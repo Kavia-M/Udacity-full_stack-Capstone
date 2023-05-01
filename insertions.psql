@@ -1,0 +1,11 @@
+\c event_management
+
+DELETE FROM hall;
+
+DELETE FROM couple;
+
+INSERT INTO public.hall (id, name, capacity, price, address) VALUES (1, 'Raj Mahal', 500, 60000, '20, Kuppander Street-1, Pudhupalayam, Gobichettipalayam');
+INSERT INTO public.hall (id, name, capacity, price, address) VALUES (2, 'Seetha Kalyana Mandapam', 400, 20000, 'Erode, Tamil Nadu');
+
+INSERT INTO public.couple (id, bride_name, groom_name, marriage_date, email_id, wedding_theme, hall) VALUES (1, 'Bride', 'groom', '2022-03-28 4:00:55', 'abc@gmail.com', 'Indian Grand look', 1);
+INSERT INTO public.couple (id, bride_name, groom_name, marriage_date, email_id, wedding_theme, hall) VALUES (2, 'Bride1', 'groom1', '2023-05-20 3:30:00', 'abcdef@gmail.com', null, null);
