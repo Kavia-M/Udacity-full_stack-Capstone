@@ -15,4 +15,5 @@ Werkzeug==0.15.4
 babel
 python-dateutil
 python-jose
+gunicorn
 requests
