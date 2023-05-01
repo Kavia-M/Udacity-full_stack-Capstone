@@ -296,7 +296,7 @@ def create_app(reset_db=RESET_DB, test_config=None):
     
     @app.errorhandler(500)
     def internal_server_error(error):
-        return jsonify({"success": False, "error": 500, "message": "internal server error"}), 500
+        return jsonify({"success": False, "error": 500, "message": "internal server error", "error_message": error}), 500
     
     @app.errorhandler(DateError)
     def handle_date_error(exeption):
