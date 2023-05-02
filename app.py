@@ -24,7 +24,7 @@ class DateError(Exception):
 def create_app(reset_db=RESET_DB, test_config=None):
     # create and configure the app
     app = Flask(__name__)
-
+    app.config['DEBUG'] = True
     if test_config:
         setup_db(app, test_config.get("SQLALCHEMY_DATABASE_URI"))
     else:
