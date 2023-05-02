@@ -72,10 +72,10 @@ def create_app(reset_db=RESET_DB, test_config=None):
             couple = Couple(bride_name=bride_name, groom_name=groom_name, marriage_date=marriage_date,
                             email_id=email_id, wedding_theme=wedding_theme, hall=hall)        
             couple.insert()
-            return {
+            return jsonify({
                 "success" : True,
                 "created" : couple.format()
-            }
+            })
         except Exception as e:
             abort(422)
     
@@ -137,10 +137,10 @@ def create_app(reset_db=RESET_DB, test_config=None):
         
         try:
             couple.update()
-            return {
+            return jsonify({
                 "success" : True,
                 "updated" : couple.format()
-            } 
+            })
         except Exception as e:
             abort(422)
 
@@ -211,10 +211,10 @@ def create_app(reset_db=RESET_DB, test_config=None):
         try:
             hall = Hall(name=name, capacity=capacity, price=price, address=address)        
             hall.insert()
-            return {
+            return jsonify({
                 "success" : True,
                 "created" : hall.format()
-            }
+            })
         except Exception as e:
             abort(422)
 
@@ -234,10 +234,10 @@ def create_app(reset_db=RESET_DB, test_config=None):
         
         try:
             hall.update()
-            return {
+            return jsonify({
                 "success" : True,
                 "updated" : hall.format()
-            } 
+            }) 
         except Exception as e:
             abort(422)
 
@@ -302,7 +302,7 @@ def create_app(reset_db=RESET_DB, test_config=None):
     def handle_date_error(exeption):
         response = jsonify(exeption.error)
         response.status_code = exeption.status_code
-        return response
+        return jsonify(response)
    
     @app.errorhandler(AuthError)
     def handle_auth_error(exeption):
@@ -312,7 +312,7 @@ def create_app(reset_db=RESET_DB, test_config=None):
         exeption.error.update({'success' : False})
         response = jsonify(exeption.error)
         response.status_code = exeption.status_code
-        return response
+        return jsonify(response)
     
     return app
 
