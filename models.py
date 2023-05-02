@@ -121,7 +121,7 @@ class Hall(db.Model):
             'id': self.id,
             'name': self.name,
             'capacity (number of persons)': self.capacity,
-            'price (per day)': self.price,
+            'price (per day)': str(self.price),
             'address': self.address
             }
 
