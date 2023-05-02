@@ -302,7 +302,7 @@ def create_app(reset_db=RESET_DB, test_config=None):
     def handle_date_error(exeption):
         response = jsonify(exeption.error)
         response.status_code = exeption.status_code
-        return jsonify(response)
+        return response
    
     @app.errorhandler(AuthError)
     def handle_auth_error(exeption):
@@ -312,7 +312,7 @@ def create_app(reset_db=RESET_DB, test_config=None):
         exeption.error.update({'success' : False})
         response = jsonify(exeption.error)
         response.status_code = exeption.status_code
-        return jsonify(response)
+        return response
     
     return app
 
