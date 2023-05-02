@@ -2,7 +2,7 @@
 The Database of the Wedding Event Management application has two Tables namely `couple` and `hall`. 
 
 ## Getting started
-- Base URL: At present this app can only be run locally and is not hosted as a base URL. The backend app is hosted at the default, `http://127.0.0.1:5000`
+- Base URL: **https://udacity-full-stack-capstone.onrender.com** For Local deployment use `http://127.0.0.1:5000`
 
 ## Errors
 Errors are returned as JSON objects in the following format:
@@ -58,6 +58,21 @@ In the above errors, 400 invalid claims and 401 unauthorized can happen at any e
   - DELETE /halls/<hall_id>
 
 ## Endpoints
+
+### `GET '/'`
+- General:
+    - Health checkup endpoint.
+    - Always returns a string `"Healthy"`
+    - No authentication authorization required
+- **Possible errors** : 
+    - ***No Errors Possible*** Always 200 success
+
+- Sample request in Postman
+  - URL:  `GET <BASE_URL>/`
+  - Response:
+```
+Healthy
+```
 ### `GET '/couples'`
 
 - General:

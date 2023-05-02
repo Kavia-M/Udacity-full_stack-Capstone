@@ -45,7 +45,11 @@ def create_app(reset_db=RESET_DB, test_config=None):
         response.headers.add(
             'Access-Control-Allow-Origin', '*')
         return response
-   
+    
+    @app.route('/')
+    def health_check():
+        return "Healthy"
+
     @app.route("/couples", methods=["POST"])
     @requires_auth()
     def create_couple(payload):
