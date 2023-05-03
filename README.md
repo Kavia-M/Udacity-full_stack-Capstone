@@ -167,6 +167,7 @@ Sincere Thanks to,
 - Natwest Groups, for providing me an opportunity to take the nanodegree
 - Awanish Kumar Sigh, Natwest mentor for the nanodegree
 - Udacity Team, for continous support and mentorship
+- Vecteezy for [logo](https://www.vecteezy.com/vector-art/13867280-wedding-rings-icon-vector-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration)
 
 ### Reference
 1. My previous projects as a part of this naodegree
