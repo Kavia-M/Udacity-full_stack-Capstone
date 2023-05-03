@@ -51,3 +51,133 @@ The database has 2 tables Couple and Hall
     `capacity` | Number of persons hall can accommodate | Integer, not null
     `price` | Date of marriage | Numeric, maximum 10 digits with 2 decimal digits, not null
     `address` | Address of the hall | String, not null
+
+### Environment variables
+Environment variables can be set using terminal with the following command.
+
+```
+export key=value
+```
+
+Or can be set using `.env` file
+- Create `.env` file under root directory. The file is added to .gitignore. So it is not available in github repository
+- In the file add the environment variables in the format `key=value` one by one in new line
+
+Note: Don not leave spaces around `=` Do not use `'` or `"` around key or value
+
+The environment variables used here are 
+Key | Default value used in code | Explanation
+--- | --- | --- |
+RESET_DB | Ture | This is used to decide whether to reset the DB while running the app
+AUTH0_DOMAIN | udacity-fullstack-kavia-auth.us.auth0.com | The auth0 domain name where the auth application resides
+API_AUDIENCE | wedding | The api audience for the auth application
+DB_HOST | 127.0.0.1:5432 | Where the DB will be hosted
+DB_USER | postgres | Name of the DB User
+DB_PASSWORD | postgres | Password for the DB User
+DB_NAME  | event_management | Name of production DataBase for the application
+DATABASE_URL  | 'postgresql://{}:{}@{}/{}'.format(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME) | URL for the Production DB. It is used in while the application being deployed in Render and DB is hosted in cloud. It is set in the Render application environment variables
+TEST_DB_NAME | event_management_test | Test Database used in test.py It is used not to disturb the production database during testing
+TEST_DATABASE_URL | 'postgresql://{}:{}@{}/{}'.format(DB_USER, DB_PASSWORD, DB_HOST, TEST_DB_NAME) | Url for the test DB. It is useful if the test db is hosted in cloud
+AUTH0_CLIENT_ID | 57b0nWhidtmko1oZidS3mDNiBXoG70aH | Client ID of the auth application in auth0
+
+***Important Environments to be taken care of while running locally***
+- RESET_DB (Set this to False while running 2nd time locally)
+- DB_USER
+- DB_PASSWORD
+
+### Authentication
+The Authentication is done using [auth0](https://auth0.com/)
+
+The tokens for different users with different roles can be optained using the curl request. The response will be a JSON with access token.
+- Manager
+    ```
+    curl --request POST \
+        --url 'https://udacity-fullstack-kavia-auth.us.auth0.com/oauth/token' \
+        --data grant_type=password \
+        --data 'client_id=57b0nWhidtmko1oZidS3mDNiBXoG70aH' \
+        --data audience=wedding \
+        --data username='kavia_testing@testmail.com' \
+        --data password='Password1234'
+
+    ```
+
+- Officer
+    ```
+    curl --request POST \
+        --url 'https://udacity-fullstack-kavia-auth.us.auth0.com/oauth/token' \
+        --data grant_type=password \
+        --data 'client_id=57b0nWhidtmko1oZidS3mDNiBXoG70aH' \
+        --data audience=wedding \
+        --data username='kavia_testing_officer@testmail.com' \
+        --data password='Password*Officer'
+
+    ```
+
+- Decorator
+    ```
+    curl --request POST \
+        --url 'https://udacity-fullstack-kavia-auth.us.auth0.com/oauth/token' \
+        --data grant_type=password \
+        --data 'client_id=57b0nWhidtmko1oZidS3mDNiBXoG70aH' \
+        --data audience=wedding \
+        --data username='kavia_testing_decorator@testmail.com' \
+        --data password='Password*Decorator'
+
+    ```
+
+- Customer (any one in internet who logged in successfully)
+    ```
+    curl --request POST \
+        --url 'https://udacity-fullstack-kavia-auth.us.auth0.com/oauth/token' \
+        --data grant_type=password \
+        --data 'client_id=57b0nWhidtmko1oZidS3mDNiBXoG70aH' \
+        --data audience=wedding \
+        --data username='kavia_testing_customer@testmail.com' \
+        --data password='Password*Customer'
+
+    ```
+
+    ***Any one can Sign up as customer and get the token using the [URL](https://udacity-fullstack-kavia-auth.us.auth0.com/authorize?audience=wedding&response_type=token&client_id=57b0nWhidtmko1oZidS3mDNiBXoG70aH&redirect_uri=https://127.0.0.1:8080/login-results). The access token will be a parameter in the redirected url***
+
+### Run locally
+Pre-requisitions:
+- Python installed
+- Pip installed 
+- Linux terminal to run commands or Gitbash for windows
+
+Steps:
+- Clone this repository
+- In terminal (or gitbash), navigate to root directory
+- Run the command, `pip install -r requirements.txt`
+- **Create 2 databases preferrably with the names `event_management` and `event_management_test` One for the app and the other for testing**
+- Set the environment variables espesially RESET_DB to False if needed, DB_USER, DB_PASSWORD, DB_NAME and TEST_DB_NAME
+- Run the command, `flask run`
+- The IP address will be displayed. The API can be accessed using postman
+- Postman collection json provided in the repository can be used or the API can be called sepately with Authorization type as bearer token and using the token got with curl requests mentioned above
+- To run test cases in test.py use the command `python test.py` or `python3 test.py` whichever is applicable to the environment of local setup
+
+## API Reference
+Please check [here](./api-documentation.md) for detailed API documentation.
+
+## Authors
+- Kavia M, an Udacity student from Natwest
+
+### Acknowledgements
+Sincere Thanks to,
+- Natwest Groups, for providing me an opportunity to take the nanodegree
+- Awanish Kumar Sigh, Natwest mentor for the nanodegree
+- Udacity Team, for continous support and mentorship
+
+### Reference
+1. My previous projects as a part of this naodegree
+    - [Trivia project file, referred for app.py for end points](https://github.com/Kavia-M/Trivia-files/blob/main/__init__.py)
+    - [Coffee Shop app, Identity Access Management Project](https://github.com/Kavia-M/Udacity-Coffee-Shop-project.git)
+2. Resources from Udacity Course
+    - [The reference code provided in Udacity github repository. This is the code taught in Course lessons. I referred this for auth.py code](https://github.com/udacity/cd0039-Identity-and-Access-Management/blob/master/lesson-2-Identity-and-Authentication/BasicFlaskAuth/app.py)
+    - [Udacity course video - referred for check_permissions() function in auth.py This video is in Full Stack Web developer nanodegree -> Course 3 Identity Access Management -> Lesson 4 Access and Authorization -> Concept 4 Using RBAC in Flask](https://www.youtube.com/watch?v=oJTIraxK4UQ&t=1s)
+    - [The reference code provided by Udacity in Course 2 API Development and Documentation. Referred for Patch and Delete end points](https://github.com/udacity/cd0037-API-Development-and-Documentation-exercises/blob/master/6_Final_Starter/backend/flaskr/__init__.py)
+3. Other sources from internet
+    - [Stack over flow](https://stackoverflow.com/)
+    - [Geeks for Geeks](https://www.geeksforgeeks.org/)
+
+

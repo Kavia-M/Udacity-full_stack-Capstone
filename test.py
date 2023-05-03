@@ -14,8 +14,8 @@ load_dotenv()
 DB_HOST = os.getenv('DB_HOST', '127.0.0.1:5432')
 DB_USER = os.getenv('DB_USER', 'postgres')
 DB_PASSWORD = os.getenv('DB_PASSWORD', 'postgres')
-DB_NAME = os.getenv('TEST_DB_NAME', 'event_management_test')
-DB_PATH = os.getenv('TEST_DATABASE_URL', 'postgresql://{}:{}@{}/{}'.format(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME))
+TEST_DB_NAME = os.getenv('TEST_DB_NAME', 'event_management_test')
+DB_PATH = os.getenv('TEST_DATABASE_URL', 'postgresql://{}:{}@{}/{}'.format(DB_USER, DB_PASSWORD, DB_HOST, TEST_DB_NAME))
 
 # AUTH0 variables
 AUTH0_DOMAIN = os.getenv('AUTH0_DOMAIN', 'udacity-fullstack-kavia-auth.us.auth0.com')  # my auth0 domain name

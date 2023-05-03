@@ -9,7 +9,7 @@ DB_HOST = os.getenv('DB_HOST', '127.0.0.1:5432')
 DB_USER = os.getenv('DB_USER', 'postgres')
 DB_PASSWORD = os.getenv('DB_PASSWORD', 'postgres')
 DB_NAME = os.getenv('DB_NAME', 'event_management')
-DB_PATH = os.getenv('DATABASE_URL', "postgresql://{}:{}@{}/{}".format('postgres', 'kavia2000', 'localhost:5432', DB_NAME))
+DB_PATH = os.getenv('DATABASE_URL', "postgresql://{}:{}@{}/{}".format(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME))
 
 db = SQLAlchemy()
 
