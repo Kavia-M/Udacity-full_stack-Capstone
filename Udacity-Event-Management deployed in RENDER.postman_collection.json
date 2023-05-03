@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "385b44b9-5174-4056-b067-122bd5c7e322",
-		"name": "Udacity-Event-Management",
+		"_postman_id": "a06f5390-ef05-4c41-a700-bc7441f820fb",
+		"name": "Udacity-Event-Management deployed in RENDER",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26178439"
 	},
@@ -37,15 +37,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -72,15 +70,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -107,15 +103,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -152,15 +146,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -188,15 +180,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/1",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"1"
@@ -224,15 +214,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -259,15 +247,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -304,15 +290,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -349,15 +333,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -384,15 +366,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/1",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"1"
@@ -464,15 +444,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -499,15 +477,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -534,15 +510,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -579,15 +553,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -615,15 +587,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/3",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/3",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"3"
@@ -651,15 +621,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -686,15 +654,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -731,15 +697,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -775,15 +739,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -811,15 +773,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -891,15 +851,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -926,15 +884,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -961,15 +917,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -1006,15 +960,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -1042,15 +994,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/3",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/3",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"3"
@@ -1078,15 +1028,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -1113,15 +1061,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -1158,15 +1104,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -1202,15 +1146,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -1238,15 +1180,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -1318,15 +1258,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -1353,15 +1291,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples"
 							]
@@ -1388,15 +1324,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -1433,15 +1367,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"2"
@@ -1469,15 +1401,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/couples/3",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/couples/3",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"couples",
 								"3"
@@ -1505,15 +1435,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -1540,15 +1468,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -1585,15 +1511,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls"
 							]
@@ -1629,15 +1553,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -1665,15 +1587,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/halls/2",
-							"protocol": "http",
+							"raw": "https://udacity-full-stack-capstone.onrender.com/halls/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"udacity-full-stack-capstone",
+								"onrender",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"halls",
 								"2"
@@ -1733,15 +1653,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/",
-					"protocol": "http",
+					"raw": "https://udacity-full-stack-capstone.onrender.com/",
+					"protocol": "https",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"udacity-full-stack-capstone",
+						"onrender",
+						"com"
 					],
-					"port": "5000",
 					"path": [
 						""
 					]
