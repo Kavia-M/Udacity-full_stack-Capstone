@@ -1,4 +1,4 @@
-# The Wedding Event Management
+# <img src="https://static.vecteezy.com/system/resources/previews/013/867/280/original/wedding-rings-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-free-vector.jpg" width=30px> The Wedding Event Management
 ## Full Stack Web Developer Capstone Project
 
 This is an Application for a Wedding Event Management company. The Database has 2 tables couple and hall. 
