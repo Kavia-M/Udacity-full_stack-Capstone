@@ -18,6 +18,8 @@ This is the final Capstone project of `Udacity - Full Stack Web Developer nanode
 
 All backend code follows [PEP8 style guidelines](https://www.python.org/dev/peps/pep-0008/).
 
+The app is hosted on Render. URL: **https://udacity-full-stack-capstone.onrender.com**
+
 ## Getting Started
 
 ### Dependencies
@@ -162,7 +164,7 @@ Please check [here](./api-documentation.md) for detailed API documentation.
 ## Authors
 - Kavia M, an Udacity student from Natwest
 
-### Acknowledgements
+## Acknowledgements
 Sincere Thanks to,
 - Natwest Groups, for providing me an opportunity to take the nanodegree
 - Awanish Kumar Sigh, Natwest mentor for the nanodegree
@@ -178,5 +180,5 @@ Sincere Thanks to,
     - [Udacity course video - referred for check_permissions() function in auth.py This video is in Full Stack Web developer nanodegree -> Course 3 Identity Access Management -> Lesson 4 Access and Authorization -> Concept 4 Using RBAC in Flask](https://www.youtube.com/watch?v=oJTIraxK4UQ&t=1s)
     - [The reference code provided by Udacity in Course 2 API Development and Documentation. Referred for Patch and Delete end points](https://github.com/udacity/cd0037-API-Development-and-Documentation-exercises/blob/master/6_Final_Starter/backend/flaskr/__init__.py)
 3. Other sources from internet
-    - [Stack over flow](https://stackoverflow.com/)
+    - [Stackoverflow](https://stackoverflow.com/)
     - [Geeks for Geeks](https://www.geeksforgeeks.org/)
